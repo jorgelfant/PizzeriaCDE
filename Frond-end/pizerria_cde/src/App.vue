@@ -1,30 +1,27 @@
 <template>
   <div id="app">
-      <home title="mangeur de noix"></home>
-      <admin></admin>
-      <mange-tarte></mange-tarte>
+    <home title="mangeur de noix"></home>
+    <admin></admin>
   </div>
 </template>
 
 <script>
-
-import Home from './components/Home';
-import Admin from './components/Admin';
-
+import Home from "./components/Home";
+import Admin from "./components/Admin";
 
 export default {
-  name: 'app',
+  name: "app",
   components: {
     Home,
     Admin
   },
   props: ["title"]
-}
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
