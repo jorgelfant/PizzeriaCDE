@@ -1,14 +1,16 @@
-public class Livraisons{
+import java.util.Date;
+
+public class Livraisons {
     private int idLivraison;
     private Clients client; // client qui doit se faire livrer
-    private DateTime dateHeureLivraison;
+    private Date dateHeureLivraison;
     private String numRueLivraison;
     private String adresseLivraison;
     private String villeLivraison;
     private String cpLivraison;
     private Commandes commande; // La commande qui doit être livrée 
 
-    public Livraisons(int id, Clients client, DateTime dateHeure, String numRue, String adresse, String ville, String cp, Commandes commande){
+    public Livraisons(int id, Clients client, Date dateHeure, String numRue, String adresse, String ville, String cp, Commandes commande){
         this.idLivraison = id;
         this.client = client;
         this.dateHeureLivraison = dateHeure;
@@ -25,7 +27,7 @@ public class Livraisons{
     public Clients getClientLivraison(){
         return this.client;
     }
-    public DateTime getDateHeureLivraison(){
+    public Date getDateHeureLivraison(){
         return this.dateHeureLivraison;
     }
     public String getAdresseLivraison(){

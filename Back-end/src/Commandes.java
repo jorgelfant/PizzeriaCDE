@@ -7,8 +7,6 @@ public class Commandes{
     public Commandes(int id, Clients client, boolean isLivraisonL){
         this.idCommande = id;
         this.client = client;
-        this.plats = platsP;
-        this.menus = menusM;
         this.isLivraison = isLivraisonL;
     }
     
@@ -18,12 +16,6 @@ public class Commandes{
     public Clients getClientCommande(){
         return this.client;
     }
-    public List<Plats> getPlatsCommande(){
-        return this.plats;
-    }
-    public List<Menus> getMenusCommande(){
-        return this.menus;
-    }
     public boolean getIsLivraison(){
         return this.isLivraison;
     }
@@ -31,7 +23,7 @@ public class Commandes{
         return this.totalPrixCommande;
     }
 
-    public void setTotalPrixCommande(prix){
+    public void setTotalPrixCommande(double prix){
         this.totalPrixCommande = prix;
     }
 }
