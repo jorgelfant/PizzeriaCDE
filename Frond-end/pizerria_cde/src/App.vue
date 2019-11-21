@@ -1,21 +1,33 @@
 <template>
   <div id="app">
-    <home title="mangeur de noix"></home>
-    <admin></admin>
+      <p>
+          <router-link to="/Home">Go to Home</router-link>
+          <router-link to="/Admin">Go to Admin</router-link>
+      </p>
+      <!-- route outlet -->
+      <!-- component matched by the route will render here -->
+      <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Home from "./components/Home";
-import Admin from "./components/Admin";
+
 
 export default {
   name: "app",
-  components: {
-    Home,
-    Admin
+  computed: {
+    username() {
+      // We will see what `params` is shortly
+      return this.$route.params.username
+    }
   },
-  props: ["title"]
+  methods: {
+    goBack() {
+      window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+    },
+  },
+  components: {
+  },
 };
 </script>
 
