@@ -1,4 +1,7 @@
-public class CommandesMenus{
+import java.util.ArrayList;
+import java.util.List;
+
+public class CommandesMenus {
     private Commandes commande;
     private List<Menus> menus = new ArrayList<Menus>(); // Collection de menus commandés
 

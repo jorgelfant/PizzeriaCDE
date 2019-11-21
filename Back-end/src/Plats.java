@@ -4,7 +4,7 @@ public class Plats{
     private String descriptionPlat;
     private double prixPlat;
 
-    public Plats(int id, String libelle, String description, String prix){
+    public Plats(int id, String libelle, String description, double prix){
         this.idPlat = id;
         this.libellePlat = libelle;
         this.descriptionPlat = description;
@@ -12,7 +12,7 @@ public class Plats{
     }
 
     public int getIdPlat(){
-        return this.prixPlat;
+        return this.idPlat;
     }
     public String getLibellePlat(){
         return this.libellePlat;

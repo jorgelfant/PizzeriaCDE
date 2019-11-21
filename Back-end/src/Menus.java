@@ -1,4 +1,7 @@
-public class Menus{
+import java.util.ArrayList;
+import java.util.List;
+
+public class Menus {
     private int idMenu;
     private List<Plats> plats = new ArrayList<Plats>(); // Collection de plats
     private double prixMenu;

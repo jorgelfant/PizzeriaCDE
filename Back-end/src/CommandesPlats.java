@@ -1,4 +1,7 @@
-public class CommandesPlats{
+import java.util.ArrayList;
+import java.util.List;
+
+public class CommandesPlats {
     private Commandes commande; // Objet commande
     private List<Plats> plats = new ArrayList<Plats>(); // Collection de plats commandés
     
