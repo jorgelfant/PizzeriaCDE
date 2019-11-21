@@ -1,18 +1,14 @@
 <template>
-<h1>{{title}}</h1>
+  <h1>{{ title }}</h1>
 </template>
 
 <script>
-  export default {
-    name: "Home",
-    props: {
-      title: String
-    }
-
+export default {
+  name: "Home",
+  props: {
+    title: String
   }
-
+};
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
