@@ -6,7 +6,7 @@
       </p>
       <!-- route outlet -->
       <!-- component matched by the route will render here -->
-      <router-view></router-view>
+      <router-view/>
   </div>
 </template>
 
@@ -16,13 +16,13 @@
 export default {
   name: "app",
   computed: {
-    username() {
+    username: () => {
       // We will see what `params` is shortly
       return this.$route.params.username
     }
   },
   methods: {
-    goBack() {
+    goBack: () => {
       window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
     },
   },
