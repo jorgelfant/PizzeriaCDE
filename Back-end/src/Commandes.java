@@ -1,11 +1,10 @@
 public class Commandes{
     private int idCommande;
     private Clients client; // Client qui a passer la commande
-    private List<Plats> plats = new ArrayList<Plats>(); // Collection de plats commandés
-    private List<Menus> menus = new ArrayList<Menus>() ; // Collection de menus commandés
     private boolean isLivraison; 
+    private double totalPrixCommande;
 
-    public Commandes(int id, Clients client, List<Plats> platsP, List<Menus> menusM, boolean isLivraisonL){
+    public Commandes(int id, Clients client, boolean isLivraisonL){
         this.idCommande = id;
         this.client = client;
         this.plats = platsP;
@@ -27,5 +26,12 @@ public class Commandes{
     }
     public boolean getIsLivraison(){
         return this.isLivraison;
+    }
+    public double getTotalPrixCommande(){
+        return this.totalPrixCommande;
+    }
+
+    public void setTotalPrixCommande(prix){
+        this.totalPrixCommande = prix;
     }
 }
